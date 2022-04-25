@@ -1,0 +1,156 @@
+/*Fixing Sticky Hover in mobiles*/
+@media (hover: hover) {
+	button:hover {
+		background-color: white;
+	}
+}
+/*Fixing Sticky Hover in mobiles*/
+
+/* Mobile Screen */
+@media (max-width: 767px) {
+	.header .logo {
+		width: 100%;
+		place-items: center;
+		height: 60px;
+		font-size: 28px;
+	}
+
+	.header .nav > li > a {
+		padding: 10px;
+		padding-bottom: 25px;
+		font-size: 15px;
+		height: 40px;
+	}
+
+	.header .nav {
+		padding: 15px;
+		font-size: 15px;
+		height: 45px;
+		margin: auto;
+	}
+
+	.landing .container .text > h1 {
+		font-size: 30px;
+	}
+
+	.landing .container .text > p {
+		font-size: 18px;
+	}
+
+	.landing > a > i {
+		bottom: 55px;
+	}
+
+	.nav .mega-menu {
+		flex-direction: column;
+		padding-bottom: 10px;
+		gap: 5px;
+	}
+
+	.mega-menu > ul:first-of-type > li:last-child {
+		border-bottom: 2px solid rgba(119, 119, 119, 0.144);
+	}
+
+	.plans > div:nth-child(2) {
+		margin-bottom: 0;
+	}
+	.videos .videos-preview {
+		flex-direction: column;
+	}
+
+	.discount .discount-cont {
+		flex-basis: 100%;
+	}
+	.discount .discount-form {
+		flex-basis: 100%;
+	}
+}
+/*Custom*/
+@media (max-width: 996px) {
+	.landing .container img {
+		display: none;
+	}
+
+	.landing .container .text {
+		text-align: center;
+	}
+
+	.nav .mega-menu .img img {
+		display: none;
+	}
+
+	.nav .mega-menu {
+		align-items: center;
+		justify-content: center;
+		margin: auto;
+	}
+
+	.articles .artc-cont {
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.skills .skills-info img {
+		display: none;
+	}
+
+	.how-works .works {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.how-works .works > img {
+		width: 90%;
+	}
+
+	.works .steps > div {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.event > img {
+		display: none;
+	}
+
+	.dots {
+		opacity: 0.4;
+	}
+
+	.event-subs {
+		margin: 20px auto;
+		display: flex;
+		flex-direction: column;
+		gap: 15px;
+		background-color: #f5f5f5;
+		justify-content: center;
+		align-items: center;
+		width: 350px;
+		height: 150px;
+		border-radius: 20px;
+	}
+
+	.event-subs > div > input {
+		width: 320px;
+		border-radius: 20px;
+	}
+}
+
+/* Small */
+@media (min-width: 768px) {
+	.container {
+		width: 750px;
+	}
+}
+/* Medium */
+@media (min-width: 992px) {
+	.container {
+		width: 970px;
+	}
+}
+/* Large */
+@media (min-width: 1200px) {
+	.container {
+		width: 1170px;
+	}
+}
