@@ -9,6 +9,8 @@ const statsSec = document.querySelector('.stats');
 console.log(statsSec);
 const stats = document.querySelectorAll('.stats-num');
 let statsDone = false; // Function Done ? No
+// Scroll Btn
+const btn = document.querySelector('#button');
 
 window.onscroll = function () {
 	if (window.scrollY >= skillsSec.offsetTop) {
@@ -25,6 +27,12 @@ window.onscroll = function () {
 			stats.forEach((stat) => startCount(stat));
 		}
 		statsDone = true;
+	}
+	// Scroll Btn
+	if (window.scrollY > 300) {
+		btn.classList.add('show');
+	} else {
+		btn.classList.remove('show');
 	}
 };
 
@@ -70,18 +78,6 @@ let eventCounter = setInterval(() => {
 }, 1000);
 
 // Scroll to top btn
-
-const btn = document.querySelector('#button');
-
-console.log(btn);
-
-window.onscroll = function () {
-	if (window.scrollY > 300) {
-		btn.classList.add('show');
-	} else {
-		btn.classList.remove('show');
-	}
-};
 
 btn.onclick = function (e) {
 	e.preventDefault();
